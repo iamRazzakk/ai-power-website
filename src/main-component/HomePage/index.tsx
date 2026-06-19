@@ -16,12 +16,12 @@ import Scrollbar from "../../components/scrollbar/scrollbar";
 
 const HomePage: React.FC = () => {
   useEffect(() => {
-    document.title = "Zentigo Solution | Digital Software Agency";
+    document.title = "Zentigo Solution | Custom Software Development Company";
   }, []);
 
   return (
     <Fragment>
-        <div className='ai-agency'>
+        <div className='software-company'>
           <div className="body_wrap o-clip">
             <Header />
             <main>

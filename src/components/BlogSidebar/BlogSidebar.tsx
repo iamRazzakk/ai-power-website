@@ -44,7 +44,7 @@ const BlogSidebar: React.FC = () => {
 
             <li className="recent_post_item xb-border">
               <h3 className="post-title border-effect-2">
-                <Link to="/blog-details">Why your business needs an AI strategy in 2025..</Link>
+                <Link to="/blog-details">Why custom software beats off-the-shelf tools for growing teams..</Link>
               </h3>
               <span>
                 <img src={profileIcon} alt="author" /> By Michael David
@@ -53,7 +53,7 @@ const BlogSidebar: React.FC = () => {
 
             <li className="recent_post_item xb-border">
               <h3 className="post-title border-effect-2">
-                <Link to="/blog-details">AI chatbots vs live chat, which is better?..</Link>
+                <Link to="/blog-details">Monolith vs microservices — what to choose for your MVP..</Link>
               </h3>
               <span>
                 <img src={profileIcon} alt="author" /> By Christopher
@@ -62,7 +62,7 @@ const BlogSidebar: React.FC = () => {
 
             <li className="recent_post_item xb-border">
               <h3 className="post-title border-effect-2">
-                <Link to="/blog-details">How AI transforms data into business insights..</Link>
+                <Link to="/blog-details">How we approach ERP modernization for mid-size companies..</Link>
               </h3>
               <span>
                 <img src={profileIcon} alt="author" /> By William Thomas
@@ -94,7 +94,7 @@ const BlogSidebar: React.FC = () => {
 
             <li>
               <Link to="/blog-details">
-                <span><i className="far fa-arrow-right"></i> Ai Business Growth</span>
+                <span><i className="far fa-arrow-right"></i> Product Engineering</span>
                 <span>(02)</span>
               </Link>
             </li>
@@ -129,14 +129,14 @@ const BlogSidebar: React.FC = () => {
 
           <ul className="tags_block list-unstyled">
             {[
-              "AI Solutions",
-              "Data Science",
+              "Web Development",
+              "Mobile Apps",
               "SaaS",
-              "AI Consulting",
-              "Enterprise AI",
-              "AI",
-              "Helpdesk",
-              "24/7 Chatbot",
+              "ERP Systems",
+              "UI/UX Design",
+              "Cloud",
+              "DevOps",
+              "Product Strategy",
             ].map((tag, i) => (
               <li key={i}>
                 <Link className="xb-border" to="#!">{tag}</Link>

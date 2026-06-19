@@ -31,7 +31,7 @@ const RelatedBlog: React.FC = () => {
                 <ul className="xb-item--meta list-unstyled ul_li">
                   <li>
                     <img src={blogIcon01} alt="icon" />
-                    chatbots tips
+                    web development
                   </li>
                   <li>
                     <img src={blogIcon02} alt="icon" />
@@ -41,7 +41,7 @@ const RelatedBlog: React.FC = () => {
 
                 <h2 className="xb-item--title border-effect-2">
                   <Link to="/blog-details">
-                    AI chatbots vs human support which is best for?..
+                    React vs Next.js — choosing the right frontend for your product..
                   </Link>
                 </h2>
               </div>
@@ -64,7 +64,7 @@ const RelatedBlog: React.FC = () => {
                 <ul className="xb-item--meta list-unstyled ul_li">
                   <li>
                     <img src={blogIcon01} alt="icon" />
-                    ai business
+                    saas development
                   </li>
                   <li>
                     <img src={blogIcon02} alt="icon" />
@@ -74,7 +74,7 @@ const RelatedBlog: React.FC = () => {
 
                 <h2 className="xb-item--title border-effect-2">
                   <Link to="/blog-details">
-                    How E-commerce brands use AI to increase sales..
+                    How SaaS teams reduce churn with better onboarding..
                   </Link>
                 </h2>
               </div>
@@ -97,7 +97,7 @@ const RelatedBlog: React.FC = () => {
                 <ul className="xb-item--meta list-unstyled ul_li">
                   <li>
                     <img src={blogIcon01} alt="icon" />
-                    ai business tips
+                    product engineering
                   </li>
                   <li>
                     <img src={blogIcon02} alt="icon" />
@@ -107,7 +107,7 @@ const RelatedBlog: React.FC = () => {
 
                 <h2 className="xb-item--title border-effect-2">
                   <Link to="/blog-details">
-                    How AI is transforming modern business..
+                    What a successful software discovery phase looks like..
                   </Link>
                 </h2>
               </div>

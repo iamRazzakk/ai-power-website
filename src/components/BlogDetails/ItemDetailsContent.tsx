@@ -14,7 +14,7 @@ const ItemDetailsContent: React.FC = () => {
       <ul className="post_meta ul_li list-unstyled mb-25">
         <li>
           <Link to="/blog-details">
-            <span className="meta_label1">#ai tools tips</span>
+            <span className="meta_label1">#software development</span>
           </Link>
         </li>
 
@@ -29,14 +29,13 @@ const ItemDetailsContent: React.FC = () => {
       </ul>
 
       <h2 className="details-content-title mb-15">
-        How our AI agency delivers next-gen <br /> automation tools to help
-        businesses.
+        How we build custom software that <br /> scales with your business.
       </h2>
 
       <p className="mb-35">
-        Our AI agency builds next-gen automation tools that help businesses
-        streamline operations, reduce manual work, and improve overall
-        efficiency...
+        Zentigo Solution partners with teams to design, develop, and ship
+        web apps, mobile products, SaaS platforms, and enterprise systems
+        that solve real operational problems...
       </p>
 
       {/* AUTHOR / META INFO */}

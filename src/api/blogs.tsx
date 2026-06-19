@@ -1,8 +1,7 @@
 // ===============================
-// 📁 Blog Data (Typed for TypeScript)
+// Blog Data
 // ===============================
 
-// 🖼 Import Images
 import blogImg1 from "../images/blog/img-1.jpg";
 import blogImg2 from "../images/blog/img-2.jpg";
 import blogImg3 from "../images/blog/img-3.jpg";
@@ -17,27 +16,27 @@ export interface Blog {
   id: string;
   title: string;
   slug: string;
-  screens: string;  
+  screens: string;
   description: string;
   author: string;
   create_at: string;
-  blogSingleImg: string; 
+  blogSingleImg: string;
   comment: string;
-  blClass: string;       
+  blClass: string;
   animation: string;
-  videoBtn?: string;      
+  videoBtn?: string;
 }
 
 const blogs: Blog[] = [
   {
     id: "1",
-    title: "Best Wedding Gown For Your Dream Day",
-    slug: "Best-Wedding-Gown-For-Your-Dream-Day",
+    title: "Building a Modern ERP with Next.js and PostgreSQL",
+    slug: "Building-a-Modern-ERP-with-Nextjs-and-PostgreSQL",
     screens: blogImg1,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet autem beatae errodio.",
-    author: "Loura Sweety",
-    create_at: "25 Sep 2024",
+      "Architecture patterns and lessons learned from shipping enterprise resource planning systems at scale.",
+    author: "Sarah Chen",
+    create_at: "24 Mar 2025",
     blogSingleImg: blogSingleImg1,
     comment: "35",
     blClass: "format-standard-image",
@@ -45,13 +44,13 @@ const blogs: Blog[] = [
   },
   {
     id: "2",
-    title: "You Must Need a Great Photographer",
-    slug: "You-Must-Need-a-Great-Photographer",
+    title: "Scaling a Multi-Tenant SaaS Platform",
+    slug: "Scaling-a-Multi-Tenant-SaaS-Platform",
     screens: blogImg2,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet autem beatae errodio.",
-    author: "David Luis",
-    create_at: "23 Sep 2024",
+      "How we design tenant isolation, billing, and observability for production SaaS products.",
+    author: "James Okonkwo",
+    create_at: "27 Apr 2025",
     blogSingleImg: blogSingleImg2,
     comment: "80",
     blClass: "format-standard-image",
@@ -59,13 +58,13 @@ const blogs: Blog[] = [
   },
   {
     id: "3",
-    title: "Top 10 Wedding Bouquet Arranging Idea",
-    slug: "Top-10-Wedding-Bouquet-Arranging-Idea",
+    title: "Mobile App Development Best Practices in 2025",
+    slug: "Mobile-App-Development-Best-Practices-in-2025",
     screens: blogImg3,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet autem beatae errodio.",
-    author: "Jenefer Willy",
-    create_at: "21 Sep 2024",
+      "Performance, offline support, and release workflows that keep mobile products reliable.",
+    author: "Priya Ramirez",
+    create_at: "17 Mar 2025",
     blogSingleImg: blogSingleImg3,
     comment: "95",
     blClass: "format-video",
@@ -74,15 +73,15 @@ const blogs: Blog[] = [
   },
   {
     id: "4",
-    title: "Best Wedding Gown For Your Dream Day",
-    slug: "Best-Wedding",
+    title: "Choosing the Right Tech Stack for Your Product",
+    slug: "Choosing-the-Right-Tech-Stack-for-Your-Product",
     screens: blogImg4,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet autem beatae errodio.",
-    author: "Jenefer Willy",
-    create_at: "21 Sep 2024",
+      "A practical framework for evaluating frameworks, databases, and cloud platforms before you build.",
+    author: "Miguel Torres",
+    create_at: "12 Feb 2025",
     blogSingleImg: blogSingleImg4,
-    comment: "95",
+    comment: "62",
     blClass: "format-video",
     animation: "1200",
   },

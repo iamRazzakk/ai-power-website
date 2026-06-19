@@ -64,27 +64,10 @@ const Header: React.FC = () => {
             <div className="main-menu__wrap navbar navbar-expand-lg p-0">
               <nav className="main-menu collapse navbar-collapse">
                 <ul>
-                  <li className=" active"> {/* menu-item-has-children */}
+                  <li className=" active">
                     <Link to="/" onClick={handleClick}>
                       <span>Home</span>
                     </Link>
-                    {/* <ul className="submenu"> */}
-                    {/* <li>
-                        <Link to="/" onClick={handleClick}>
-                          <span>Ai Agency</span>
-                        </Link>
-                      </li> */}
-                    {/* <li>
-                        <Link to="/ai-marketing" onClick={handleClick}>
-                          <span>Ai Marketing</span>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/ai-chatbot" onClick={handleClick}>
-                          <span>Ai Chatbot</span>
-                        </Link>
-                      </li> */}
-                    {/* </ul> */}
                   </li>
 
                   <li>
@@ -138,7 +121,7 @@ const Header: React.FC = () => {
             {/* Button */}
             <div className="header-btn">
               <Link to="/contact" className="thm-btn" onClick={handleClick}>
-                Join Now
+                Start a Project
               </Link>
             </div>
 

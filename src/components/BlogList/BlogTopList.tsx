@@ -2,7 +2,6 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 
-// IMAGES
 import blog1 from "../../images/blog/img04.jpg";
 import blog2 from "../../images/blog/img4.2.jpg";
 import blog3 from "../../images/blog/img4.3.jpg";
@@ -14,31 +13,31 @@ import shapeRight from "../../images/shape/next-shape.png";
 const blogSlides = [
   {
     img: blog1,
-    tag: "# ai business tips",
-    title: "We’re live! explore our smart AI solutions for the future of business.",
+    tag: "# software development",
+    title: "How we ship production-ready SaaS platforms on predictable timelines.",
     content:
-      "We’re live! Discover our smart AI solutions designed to help businesses automate tasks, gain insights, and grow faster.",
+      "From discovery to deployment, our teams follow proven delivery practices that keep stakeholders aligned and products launch-ready.",
   },
   {
     img: blog2,
-    tag: "# chatbots tips",
-    title: "Why AI chatbots are the next big thing in business communication..",
+    tag: "# mobile apps",
+    title: "Why mobile-first architecture matters for modern business products.",
     content:
-      "AI chatbots are reshaping communication with instant support and personalized responses, reducing business costs.",
+      "Performance, offline support, and thoughtful UX patterns that help mobile apps retain users and drive real business outcomes.",
   },
   {
     img: blog3,
-    tag: "# ai business tips",
-    title: "How AI agencies help small businesses compete with global brands..",
+    tag: "# enterprise systems",
+    title: "Building ERP systems that teams actually adopt.",
     content:
-      "AI agencies empower small businesses with tools like analytics, automation, and personalized marketing.",
+      "Custom workflows, clean integrations, and incremental rollouts that make enterprise software practical instead of painful.",
   },
   {
     img: blog4,
-    tag: "# ai business tips",
-    title: "Top services you should expect from a modern AI agency..",
+    tag: "# product engineering",
+    title: "What to look for in a long-term software development partner.",
     content:
-      "Modern AI agencies offer chatbots, predictive analytics, personalized marketing, and process automation.",
+      "Transparent communication, maintainable codebases, and teams that care about outcomes—not just ticket counts.",
   },
 ];
 
@@ -81,10 +80,8 @@ const BlogSlider: React.FC = () => {
             ))}
           </Swiper>
 
-          {/* PAGINATION */}
           <div className="swiper-pagination"></div>
 
-          {/* NAV BUTTONS */}
           <div className="blog-item_button">
             <div className="blog-swiper-btn swiper-button-prev">
               <img src={shapeLeft} alt="" />

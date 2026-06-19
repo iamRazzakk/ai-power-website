@@ -53,16 +53,16 @@ const BlogList: React.FC = () => {
                   </div>
 
                   <div className="xb-item--holder">
-                    <Link to="/blog-details" className="xb-item--tag">#ai tools tips</Link>
+                    <Link to="/blog-details" className="xb-item--tag">#software development</Link>
 
                     <h3 className="xb-item--title border-effect-2">
                       <Link to="/blog-details">
-                        How our AI agency delivers next-gen automation tools..
+                        How we design scalable SaaS architectures for growing teams..
                       </Link>
                     </h3>
 
                     <span className="xb-item--content">
-                      Our AI agency creates smart automation tools simplify.
+                      Practical patterns for multi-tenant data models, API design, and deployment pipelines.
                     </span>
 
                     <div className="xb-item--button mt-40">
@@ -79,14 +79,14 @@ const BlogList: React.FC = () => {
                 {/* ITEM 2 */}
                 <div className="blog_details_item xb-border">
                   <div className="xb-item--inner">
-                    <Link to="/blog-details" className="xb-item--tag">#chatbots tips</Link>
+                    <Link to="/blog-details" className="xb-item--tag">#mobile development</Link>
 
                     <h3 className="xb-item--title border-effect-2">
-                      <Link to="/blog-details">From lead generation to sales conversion...</Link>
+                      <Link to="/blog-details">From prototype to App Store launch — our mobile delivery playbook...</Link>
                     </h3>
 
                     <span className="xb-item--content">
-                      Smart chatbots are transforming the way businesses interact with customers—from the first touchpoint to the final sale. By engaging visitors.
+                      Release cadence, testing strategy, and performance tuning for production mobile apps.
                     </span>
 
                     <div className="xb-item--button mt-40">
@@ -107,16 +107,16 @@ const BlogList: React.FC = () => {
                   </div>
 
                   <div className="xb-item--holder">
-                    <Link to="/blog-details" className="xb-item--tag">#chatbots tips</Link>
+                    <Link to="/blog-details" className="xb-item--tag">#web development</Link>
 
                     <h3 className="xb-item--title border-effect-2">
                       <Link to="/blog-details">
-                        How AI chatbots are boosting sales for E-commerce brands..
+                        Building high-performance web apps with React and Next.js..
                       </Link>
                     </h3>
 
                     <span className="xb-item--content">
-                      AI chatbots are becoming powerful sales tools.
+                      Server rendering, caching, and component architecture for fast, maintainable products.
                     </span>
 
                     <div className="xb-item--button mt-40">
@@ -131,14 +131,14 @@ const BlogList: React.FC = () => {
                 {/* ITEM 4 */}
                 <div className="blog_details_item xb-border">
                   <div className="xb-item--inner">
-                    <Link to="/blog-details" className="xb-item--tag">#ai marketing</Link>
+                    <Link to="/blog-details" className="xb-item--tag">#product strategy</Link>
 
                     <h3 className="xb-item--title border-effect-2">
-                      <Link to="/blog-details">10 Real-world ways AI improves efficiency...</Link>
+                      <Link to="/blog-details">10 signs your business is ready for custom software...</Link>
                     </h3>
 
                     <span className="xb-item--content">
-                     AI is no longer a future concept—it's actively reshaping how businesses run today. From automating back-office tasks to optimizing ad spend and streamlining.
+                      When off-the-shelf tools stop scaling and bespoke systems become the smarter investment.
                     </span>
 
                     <div className="xb-item--button mt-40">
@@ -159,14 +159,14 @@ const BlogList: React.FC = () => {
                   </div>
 
                   <div className="xb-item--holder">
-                    <Link to="/blog-details" className="xb-item--tag">#ai tips</Link>
+                    <Link to="/blog-details" className="xb-item--tag">#engineering</Link>
 
                     <h3 className="xb-item--title border-effect-2">
-                      <Link to="/blog-details">Is your business AI-ready?</Link>
+                      <Link to="/blog-details">Choosing between monolith and microservices for your MVP</Link>
                     </h3>
 
                     <span className="xb-item--content">
-                      Adopting AI can be a game-changer...
+                      A pragmatic guide to architecture decisions that won't slow your first release.
                     </span>
 
                     <div className="xb-item--button mt-40">

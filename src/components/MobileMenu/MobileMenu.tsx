@@ -17,11 +17,6 @@ const menus: MenuItem[] = [
     id: 1,
     title: "Home",
     link: "/",
-    submenu: [
-      { id: 11, title: "AI Agency", link: "/" },
-      // { id: 12, title: "AI Marketing", link: "/ai-marketing" },
-      // { id: 13, title: "AI Chatbot", link: "/ai-chatbot" },
-    ],
   },
   {
     id: 2,

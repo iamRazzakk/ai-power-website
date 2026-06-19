@@ -48,7 +48,7 @@ const BlogDetailsSection: React.FC = () => {
 
               {/* MAIN HEADING */}
               <h3 className="item_details_info_heading mb-35">
-                AI insights that turn complex data into <br /> clear, confident business actions.
+                Software insights that turn complex requirements into <br /> clear, shippable products.
               </h3>
 
               <div className="row mb-35 mt-none-30">
@@ -65,11 +65,11 @@ const BlogDetailsSection: React.FC = () => {
               </div>
 
               <p>
-                At our AI agency, we specialize in delivering next-generation automation tools that help businesses operate smarter, faster, and more efficiently. In today’s fast-paced digital environment, companies are constantly challenged to reduce manual workloads, cut costs, and make faster, data-driven decisions. Our intelligent automation solutions are designed to tackle these challenges head-on. From automating repetitive tasks and streamlining workflows to integrating predictive analytics and real-time data processing, our tools empower to transform how they function at every level.
+                At Zentigo Solution, we specialize in building custom software that helps businesses operate smarter, faster, and more efficiently. In today's fast-paced digital environment, companies are constantly challenged to replace manual workflows, reduce operational costs, and ship products that scale. Our engineering teams tackle these challenges with disciplined discovery, clean architecture, and iterative delivery. From web and mobile applications to SaaS platforms and ERP systems, we build software that teams actually adopt and rely on every day.
               </p>
 
               <p className="mt-35">
-                We work closely with businesses to understand their unique pain points and develop tailored AI systems that not only solve immediate operational issues but also support long-term growth. Whether it’s optimizing back-office operations, enhancing customer service, or enabling faster decision-making, our AI-driven approach ensures that every tool we build brings measurable impact. By combining deep technical expertise with a focus.
+                We work closely with businesses to understand their unique requirements and develop tailored systems that solve immediate operational issues while supporting long-term growth. Whether it's modernizing legacy tools, launching a new product, or integrating with existing platforms, our approach ensures every release brings measurable impact. By combining deep technical expertise with transparent communication, we become a long-term technology partner—not just a vendor.
               </p>
 
               {/* VIDEO EMBED */}
@@ -85,11 +85,11 @@ const BlogDetailsSection: React.FC = () => {
               </div>
 
               <h3 className="item_details_info_heading mb-20">
-                Automating repetitive tasks with intelligent.
+                Replacing manual workflows with reliable software.
               </h3>
 
               <p className="mb-40">
-                Automating repetitive tasks with intelligent AI tools allows businesses to save time, reduce errors, and focus on higher-value work. Instead of relying on manual input for routine processes like data entry, report generation, or customer queries, intelligent automation uses machine learning and smart algorithms to handle them efficiently. These systems learn patterns, adapt to changes, and operate 24/7—ensuring consistency and speed. As a result, teams become more productive, workflows become more streamlined, and businesses can scale without increasing overhead.
+                Custom software replaces repetitive manual processes with systems that are faster, more accurate, and easier to maintain. Instead of juggling spreadsheets, disconnected tools, and ad-hoc scripts, teams get purpose-built applications with clear workflows, role-based access, and integrations that match how they actually work. The result is less friction, fewer errors, and more time spent on work that moves the business forward.
               </p>
 
               {/* IMAGE + LIST */}

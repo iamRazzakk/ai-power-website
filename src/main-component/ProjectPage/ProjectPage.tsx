@@ -7,7 +7,7 @@ import ProjectSection from "./ProjectSection";
 
 const ProjectPage: React.FC = () => {
   useEffect(() => {
-    document.title = "Our Projects | Zentigo Solution Digital Software Agency";
+    document.title = "Our Projects | Zentigo Solution";
   }, []);
 
   return (

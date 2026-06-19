@@ -11,7 +11,7 @@ import Footer from "../../components/footer/Footer";
 
 const AboutPage: React.FC = () => {
   useEffect(() => {
-    document.title = "About Us | Zentigo Solution Digital Software Agency";
+    document.title = "About Us | Zentigo Solution";
   }, []);
 
   return (

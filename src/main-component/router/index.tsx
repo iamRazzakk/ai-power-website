@@ -1,11 +1,8 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import WowInit from "../../components/wowInit/wowInit";
 
-// ✅ Home Pages
 import Homepage from "../HomePage";
-import HomePage2 from "../HomePage2/HomePage2";
-import HomePage3 from "../HomePage3/HomePage3";
 import AboutPage from "../AboutPage/AboutPage";
 import ServicePage from "../ServicePage/ServicePage";
 import SeviceSinglePage from "../SeviceSinglePage/SeviceSinglePage";
@@ -32,8 +29,8 @@ const AllRoute: React.FC = () => {
           {/* ✅ Home Routes */}
           <Route path="/" element={<Homepage />} />
           <Route path="/home" element={<Homepage />} />
-          <Route path="/ai-marketing" element={<HomePage2 />} />
-          <Route path="/ai-chatbot" element={<HomePage3 />} />
+          <Route path="/ai-marketing" element={<Navigate to="/" replace />} />
+          <Route path="/ai-chatbot" element={<Navigate to="/" replace />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/service" element={<ServicePage />} />
           <Route path="/service-details" element={<SeviceSinglePage />} />

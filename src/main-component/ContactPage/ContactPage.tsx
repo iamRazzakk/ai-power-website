@@ -14,7 +14,7 @@ const GULSHAN_MAP_EMBED =
 
 const ContactPage: React.FC = () => {
   useEffect(() => {
-    document.title = "Contact Us | Zentigo Solution Digital Software Agency";
+    document.title = "Contact Us | Zentigo Solution";
   }, []);
 
   return (

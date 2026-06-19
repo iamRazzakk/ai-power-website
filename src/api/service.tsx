@@ -1,8 +1,3 @@
-// ===============================
-// 📁 Service Data (Typed for TypeScript)
-// ===============================
-
-// 🖼 Import Images
 import simg1 from "../images/service/image-1.jpg";
 import simg2 from "../images/service/image-2.jpg";
 import simg3 from "../images/service/image-3.jpg";
@@ -14,48 +9,48 @@ import singleImg3 from "../images/service-single/single3.jpg";
 import singleImg4 from "../images/service-single/single4.jpg";
 
 export interface Service {
-  id: string;     
-  title: string;      
-  slug: string;       
-  description: string; 
-  simg: string;        
-  ssImg: string;      
+  id: string;
+  title: string;
+  slug: string;
+  description: string;
+  simg: string;
+  ssImg: string;
 }
 
 const Services: Service[] = [
   {
     id: "1",
-    title: "Wedding Dress",
-    slug: "Wedding-Dress",
+    title: "Web Development",
+    slug: "Web-Development",
     description:
-      "Aliquet magna menas esmod pelque diam. Maenas massa tincint bidum tidunt.",
+      "Responsive, high-performance web applications built with modern frameworks and clean architecture.",
     simg: simg1,
     ssImg: singleImg1,
   },
   {
     id: "2",
-    title: "Bridal Bouquets",
-    slug: "Bridal-Bouquets",
+    title: "Mobile App Development",
+    slug: "Mobile-App-Development",
     description:
-      "Aliquet magna menas esmod pelque diam. Maenas massa tincint bidum tidunt.",
+      "Native and cross-platform mobile apps with polished UX and reliable release pipelines.",
     simg: simg2,
     ssImg: singleImg2,
   },
   {
     id: "3",
-    title: "Cake Decoration",
-    slug: "Cake-Decoration",
+    title: "SaaS Product Engineering",
+    slug: "SaaS-Product-Engineering",
     description:
-      "Aliquet magna menas esmod pelque diam. Maenas massa tincint bidum tidunt.",
+      "End-to-end SaaS development — from MVP to multi-tenant platforms with billing and analytics.",
     simg: simg3,
     ssImg: singleImg3,
   },
   {
     id: "4",
-    title: "Event Planning",
-    slug: "Event-Planning",
+    title: "ERP & Enterprise Systems",
+    slug: "ERP-Enterprise-Systems",
     description:
-      "Aliquet magna menas esmod pelque diam. Maenas massa tincint bidum tidunt.",
+      "Custom ERP and internal tools that streamline operations and integrate with your existing stack.",
     simg: simg4,
     ssImg: singleImg4,
   },
