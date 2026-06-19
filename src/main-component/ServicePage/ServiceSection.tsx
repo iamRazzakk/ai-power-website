@@ -3,12 +3,7 @@ import { Link } from "react-router-dom";
 
 // Background image
 import serviceBg from "../../images/bg/service-gradient-bg.png";
-
-// Service images
-import img07 from "../../images/service/img07.jpg";
-import img08 from "../../images/service/img08.jpg";
-import img09 from "../../images/service/img09.jpg";
-import img11 from "../../images/service/img11.jpg";
+import { SERVICES, getServiceDetailsLink } from "../../data/servicesData";
 
 const ServiceSection: React.FC = () => {
   // ========================
@@ -84,50 +79,12 @@ const ServiceSection: React.FC = () => {
   // ========================
   // ARRAY DATA
   // ========================
-  const services = [
-    {
-      title: "AI saas product",
-      content:
-        "We build scalable AI-powered SaaS solutions that automate tasks, deliver insights, and boost business performance.",
-      images: [img07, img07, img07, img07],
-      link: "/service-details",
-    },
-    {
-      title: "Data and intelligence..",
-      content:
-        "We turn complex data into clear, actionable insights using AI and advanced analytics—empowering smarter decisions.",
-      images: [img08, img08, img08, img08],
-      link: "/service-details",
-    },
-    {
-      title: "AI for E-commerce",
-      content:
-        "We enhance e-commerce with AI-powered, dynamic pricing, and personalized customer experiences.",
-      images: [img09, img09, img09, img09],
-      link: "/service-details",
-    },
-    {
-      title: "AI consulting",
-      content:
-        "We guide businesses in adopting AI strategies, optimizing processes, and integrating technologies for lasting success.",
-      images: [img11, img11, img11, img11],
-      link: "/service-details",
-    },
-    {
-      title: "AI chatbot virtual",
-      content:
-        "We create intelligent chatbots and virtual assistants that improve customer support and automate interactions 24/7.",
-      images: [img11, img11, img11, img11],
-      link: "/service-details",
-    },
-    {
-      title: "AI - marketing",
-      content:
-        "Use AI to target audiences, personalize campaigns, and analyze data for better engagement and results.",
-      images: [img07, img07, img07, img07],
-      link: "/service-details",
-    },
-  ];
+  const services = SERVICES.map((service) => ({
+    title: service.title,
+    content: service.shortDesc,
+    images: [service.heroImage, service.heroImage, service.heroImage, service.heroImage],
+    link: getServiceDetailsLink(service.slug),
+  }));
 
   // ========================
   // RETURN SECTION
@@ -156,7 +113,7 @@ const ServiceSection: React.FC = () => {
                   <div className="xb-item--img xb-img">
                     {service.images.map((img, i) => (
                       <Link key={i} to={service.link}>
-                        <img src={img} alt="service" />
+                        <img src={img} alt={service.title} loading="lazy" />
                       </Link>
                     ))}
                   </div>

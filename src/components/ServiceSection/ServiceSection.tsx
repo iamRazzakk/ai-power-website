@@ -3,14 +3,27 @@ import aboutBg from "../../images/bg/service-bg.png";
 import { Link } from "react-router-dom";
 import gif from "../../images/icon/b10c3e43e836d32554bf.gif";
 import arrowIcon from "../../images/icon/rotate-arrow-black.svg";
+import { SERVICES, getServiceDetailsLink } from "../../data/servicesData";
 
-// Service images
-import img01 from "../../images/service/img01.jpg";
-import img02 from "../../images/service/img02.jpg";
-import img03 from "../../images/service/img03.jpg";
-import img04 from "../../images/service/img04.jpg";
-import img05 from "../../images/service/img05.jpg";
-import img06 from "../../images/service/img06.jpg";
+// Service images — Unsplash
+const img01 =
+  "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80";
+const img02 =
+  "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80";
+const img03 =
+  "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80";
+const img04 =
+  "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80";
+const img05 =
+  "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80";
+const img06 =
+  "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80";
+const img07 =
+  "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=800&q=80";
+const img08 =
+  "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80";
+
+const serviceImages = [img01, img02, img04, img03, img07, img05, img06, img08];
 
 interface ServiceItem {
   id: number;
@@ -20,50 +33,13 @@ interface ServiceItem {
   link: string;
 }
 
-const services: ServiceItem[] = [
-  {
-    id: 1,
-    title: "AI SaaS Product",
-    desc: "Use AI to target audiences, personalize campaigns, and analyze data for better engagement and results.",
-    img: img01,
-    link: "/service-details",
-  },
-  {
-    id: 2,
-    title: "Data Science",
-    desc: "We turn complex data into clear, actionable insights using AI and advanced analytics—empowering smarter decisions.",
-    img: img02,
-    link: "/service-details",
-  },
-  {
-    id: 3,
-    title: "AI Chatbot Virtual",
-    desc: "We create intelligent chatbots and virtual assistants that improve customer support and automate interactions 24/7.",
-    img: img03,
-    link: "/service-details",
-  },
-  {
-    id: 4,
-    title: "AI for E-commerce",
-    desc: "We enhance e-commerce with AI-powered, dynamic pricing, and personalized customer experiences.",
-    img: img04,
-    link: "/service-details",
-  },
-  {
-    id: 5,
-    title: "AI Consulting",
-    desc: "We guide businesses in adopting AI strategies, optimizing processes, and integrating technologies for lasting success.",
-    img: img05,
-    link: "/service-details",
-  },
-  {
-    id: 6,
-    title: "AI Marketing",
-    desc: "Use AI to target audiences, personalize campaigns, and analyze data for better engagement and results.",
-    img: img06,
-    link: "/service-details",
-  },
-];
+const services: ServiceItem[] = SERVICES.map((service, index) => ({
+  id: index + 1,
+  title: service.title,
+  desc: service.shortDesc,
+  img: serviceImages[index] ?? service.heroImage,
+  link: getServiceDetailsLink(service.slug),
+}));
 
 const ServiceSection: React.FC = () => {
   const [activeId, setActiveId] = useState<number>(1);
@@ -79,12 +55,12 @@ const ServiceSection: React.FC = () => {
         <div className="row justify-content-center">
           <div className="col-lg-11">
             <div className="sec-title custom-sec-title xb-sec-padding text-center">
-              <span className="sub-title">Our Main Services</span>
+              <span className="sub-title">Our Services</span>
               <h2 className="title">
                 <span className="round-img">
                   <img src={gif} alt="gif" />
                 </span>{" "}
-                Helping you grow with the power of AI
+                End-to-end digital product engineering for growing businesses
               </h2>
               <div className="xb-heading-btn d-inline">
                 <Link className="thm-btn agency-btn" to="/service">
@@ -234,8 +210,9 @@ const ServiceSection: React.FC = () => {
         {services.map((service) => (
           <div
             key={service.id}
-            className={`xb-service-item xb-border xb-mouseenter ${activeId === service.id ? "active" : ""
-              }`}
+            className={`xb-service-item xb-border xb-mouseenter ${
+              activeId === service.id ? "active" : ""
+            }`}
             onMouseEnter={() => setActiveId(service.id)}
           >
             <div className="xb-item--inner">
@@ -264,7 +241,7 @@ const ServiceSection: React.FC = () => {
                 <h3 className="xb-item--title">
                   <Link to={service.link}>{service.title}</Link>
                 </h3>
-                <Link className="xb-icon" to="/service-details">
+                <Link className="xb-icon" to={service.link}>
                   <svg
                     width="31"
                     height="31"
@@ -330,7 +307,6 @@ const ServiceSection: React.FC = () => {
                     />
                   </svg>
                 </Link>
-
               </div>
             </div>
           </div>

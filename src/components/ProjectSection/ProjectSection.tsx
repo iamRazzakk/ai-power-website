@@ -1,24 +1,46 @@
 import React, { useEffect } from "react";
-
-// ✅ Import images
+import { Link } from "react-router-dom";
 import projectBg from "../../images/bg/project-bg.png";
 import gifRound from "../../images/icon/b10c3e43e836d32554bf.gif";
-import projectImg01 from "../../images/project/project-img01.jpg";
-import projectImg02 from "../../images/project/project-img02.jpg";
-import projectImg03 from "../../images/project/project-img03.jpg";
-import projectImg04 from "../../images/project/project-img04.jpg";
+import nextjsIcon from "../../images/icon/tech-nextjs.svg";
+import typescriptIcon from "../../images/icon/tech-typescript.svg";
+import tailwindIcon from "../../images/icon/tech-tailwind.svg";
+import nodejsIcon from "../../images/icon/tech-nodejs.svg";
+import expressIcon from "../../images/icon/tech-express.svg";
+import prismaIcon from "../../images/icon/tech-prisma.svg";
+import mongodbIcon from "../../images/icon/tech-mongodb.svg";
+import postgresqlIcon from "../../images/icon/tech-postgresql.svg";
+import mongooseIcon from "../../images/icon/tech-mongoose.svg";
 
-// ✅ Import icons
-import icon01 from "../../images/icon/project-icon01.svg";
-import icon02 from "../../images/icon/project-icon02.svg";
-import icon03 from "../../images/icon/project-icon03.svg";
-import icon08 from "../../images/icon/project-icon08.svg";
-import icon09 from "../../images/icon/project-icon09.svg";
-import icon10 from "../../images/icon/project-icon10.svg";
-import icon11 from "../../images/icon/project-icon11.svg";
-import icon12 from "../../images/icon/project-icon12.svg";
-import icon13 from "../../images/icon/project-icon13.svg";
-import { Link } from "react-router-dom";
+type TechKey =
+  | "nextjs"
+  | "typescript"
+  | "tailwind"
+  | "nodejs"
+  | "express"
+  | "prisma"
+  | "mongodb"
+  | "postgresql"
+  | "mongoose";
+
+const TECH_ICONS: Record<TechKey, { name: string; icon: string }> = {
+  nextjs: { name: "Next.js", icon: nextjsIcon },
+  typescript: { name: "TypeScript", icon: typescriptIcon },
+  tailwind: { name: "Tailwind CSS", icon: tailwindIcon },
+  nodejs: { name: "Node.js", icon: nodejsIcon },
+  express: { name: "Express", icon: expressIcon },
+  prisma: { name: "Prisma", icon: prismaIcon },
+  mongodb: { name: "MongoDB", icon: mongodbIcon },
+  postgresql: { name: "PostgreSQL", icon: postgresqlIcon },
+  mongoose: { name: "Mongoose", icon: mongooseIcon },
+};
+
+const projectImgErp =
+  "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=80";
+const projectImgSaas =
+  "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80";
+const projectImgBeauty =
+  "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1600&q=80";
 
 const ProjectSection: React.FC = () => {
   useEffect(() => {
@@ -78,12 +100,12 @@ const ProjectSection: React.FC = () => {
     <section className="project bg_img pt-135 pb-150">
       <div className="container">
         <div className="sec-title custom-sec-title xb-sec-padding text-center">
-          <span className="sub-title">Our Projects</span>
+          <span className="sub-title">Case Studies</span>
           <h2 className="title">
             <span className="round-img">
               <img src={gifRound} alt="animation" />
             </span>{" "}
-            See the results that reflect of our hard work
+            Full-stack products built with our core technology stack
           </h2>
           <div className="xb-heading-btn d-inline">
             <Link className="thm-btn agency-btn" to="/project">
@@ -94,7 +116,7 @@ const ProjectSection: React.FC = () => {
                   {[...Array(2)].map((_, i) => (
                     <svg
                       key={i}
-                      width="28"
+                      width="28" 
                       height="28"
                       viewBox="0 0 28 28"
                       fill="none"
@@ -173,7 +195,6 @@ const ProjectSection: React.FC = () => {
               <li>1</li>
               <li className="active">2</li>
               <li>3</li>
-              <li>4</li>
             </ul>
           </div>
 
@@ -181,36 +202,28 @@ const ProjectSection: React.FC = () => {
           <div className="xb-project-inner">
             {[
               {
-                img: projectImg01,
-                title: "Chatbot and NLP projects..",
-                desc: "We build smart chatbots and NLP tools that understand and respond naturally. From customer support to document analysis, our AI solutions automate communication, save time, and improve user experience.",
-                industry: "Data Processing",
-                country: "Germany, Issum",
-                techs: [icon01, icon02, icon03],
+                img: projectImgErp,
+                title: "NexusFlow ERP Platform",
+                desc: "A full-stack ERP built with Next.js, TypeScript, and Tailwind CSS — unifying inventory, procurement, HR, and financial reporting in one dashboard. Node.js and Express power the API layer, while PostgreSQL and Prisma deliver reliable, type-safe data modeling across departments.",
+                industry: "ERP Systems",
+                country: "United Kingdom",
+                techs: ["nextjs", "typescript", "tailwind", "nodejs", "express", "postgresql", "prisma"] as TechKey[],
               },
               {
-                img: projectImg02,
-                title: "E-commerce & marketing..",
-                desc: "We create AI solutions that boost sales and customer engagement—like smart product recommendations, dynamic pricing, and behavior-based targeting. Our tools help brands personalize experiences and grow faster.",
-                industry: "Artificial Intelligence",
-                country: "Singapore",
-                techs: [icon01, icon08, icon09],
-              },
-              {
-                img: projectImg03,
-                title: "Computer vision projects..",
-                desc: "We develop AI systems that see and understand visual data—detecting objects, recognizing patterns, and automating inspections. Our computer vision solutions help businesses improve accuracy, decision-making.",
-                industry: "Computer Vision",
+                img: projectImgSaas,
+                title: "ScaleStack SaaS Hub",
+                desc: "A multi-tenant SaaS platform with subscription billing, role-based access, and real-time analytics. The Next.js frontend uses custom CSS and Tailwind for a fast admin experience; Node.js, Express, and MongoDB with Mongoose handle flexible user data at scale.",
+                industry: "SaaS Platforms",
                 country: "United States",
-                techs: [icon10, icon11, icon01],
+                techs: ["nextjs", "tailwind", "nodejs", "express", "mongodb", "mongoose"] as TechKey[],
               },
               {
-                img: projectImg04,
-                title: "Data science analytics..",
-                desc: "We turn complex data into clear, actionable insights. From predictive models to real-time dashboards, our AI-powered analytics help businesses make smarter, faster decisions with confidence.",
-                industry: "Data Science",
-                country: "Canada",
-                techs: [icon08, icon12, icon13],
+                img: projectImgBeauty,
+                title: "GlowCart Beauty Commerce",
+                desc: "A beauty services and e-commerce platform with online booking, product catalog, and secure checkout. Built with Next.js and TypeScript on the frontend; Express and Prisma manage orders, inventory, and customer profiles on PostgreSQL.",
+                industry: "E-Commerce & Beauty",
+                country: "United Arab Emirates",
+                techs: ["nextjs", "typescript", "express", "prisma", "postgresql"] as TechKey[],
               },
             ].map((project, index) => (
               <div
@@ -233,9 +246,13 @@ const ProjectSection: React.FC = () => {
                     <div className="xb-item--technologie ul_li">
                       <span>Core Technologies:</span>
                       <ul className="list-unstyled ul_li">
-                        {project.techs.map((icon, i) => (
-                          <li key={i}>
-                            <img src={icon} alt="icon" />
+                        {project.techs.map((techKey) => (
+                          <li key={techKey}>
+                            <img
+                              src={TECH_ICONS[techKey].icon}
+                              alt={TECH_ICONS[techKey].name}
+                              title={TECH_ICONS[techKey].name}
+                            />
                           </li>
                         ))}
                       </ul>

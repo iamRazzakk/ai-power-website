@@ -36,7 +36,7 @@ const IndustriesSection: React.FC = () => {
       <div className="container">
         <div className="sec-title sec-title-center text-center mb-50">
           <span className="sub-title mb-15">Industries Served</span>
-          <h2 className="title">Industries we served with AI</h2>
+          <h2 className="title">Industries we build for</h2>
         </div>
       </div>
 

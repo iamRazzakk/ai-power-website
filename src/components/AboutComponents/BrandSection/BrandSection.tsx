@@ -34,7 +34,7 @@ const BrandSection: React.FC = () => {
             <div className="container">
                 <div className="sec-title sec-title-center brand-sec-title text-center mb-40">
                     <p className="sub-title">
-                        World's Best <span>120 Companies</span> Work With Us
+                        Trusted by <span>growing businesses</span> building digital products
                     </p>
                 </div>
             </div>

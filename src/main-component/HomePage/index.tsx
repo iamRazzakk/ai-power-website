@@ -16,7 +16,7 @@ import Scrollbar from "../../components/scrollbar/scrollbar";
 
 const HomePage: React.FC = () => {
   useEffect(() => {
-    document.title = "Home | AI Agency & Technology React Template";
+    document.title = "Aivora | Digital Software Agency";
   }, []);
 
   return (

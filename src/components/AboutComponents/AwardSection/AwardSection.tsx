@@ -53,15 +53,15 @@ const AwardSection: React.FC = () => {
                     {/* LEFT CONTENT */}
                     <div className="col-lg-6">
                         <div className="sec-title mb-30">
-                            <span className="sub-title mb-20">Our awards</span>
+                            <span className="sub-title mb-20">Our expertise</span>
                             <h2 className="title title-line_height mb-5">
-                                We are prestigious award winner
+                                Delivering measurable results across industries
                             </h2>
                             <p className="content">
-                                We are a prestigious award-winning agency, recognized for our
-                                excellence and innovation in delivering cutting-edge AI solutions
-                                that help businesses achieve remarkable growth and success. Our
-                                commitment client satisfaction.
+                                We help businesses launch and scale digital products — from
+                                ERP platforms and SaaS hubs to beauty e-commerce apps. Our
+                                full-stack team combines Next.js, TypeScript, Node.js, and
+                                modern databases to ship reliable software with lasting impact.
                             </p>
 
                             <div className="team-btn mt-40">

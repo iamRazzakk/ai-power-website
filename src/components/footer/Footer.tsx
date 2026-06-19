@@ -121,41 +121,41 @@ const Footer: React.FC = () => {
         {/* Footer Heading */}
         <div className="xb-footer-heading wow zoomIn" data-wow-delay="0ms" data-wow-duration="600ms">
           <h1 className="title">Aivora</h1>
-          <a className="mail" href="mailto:aivora@domain.com">
-            <img src={emailIcon} alt="email" /> aivora@domain.com
+          <a className="mail" href="mailto:hello@aivora.com">
+            <img src={emailIcon} alt="email" /> hello@aivora.com
           </a>
         </div>
 
         {/* Footer Navigation */}
         <div className="xb-footer-nav">
           <div className="xb-footer-nav-item">
-            <span className="sub-title">What we do?</span>
+            <span className="sub-title">What we build</span>
             <h2 className="title">
               <Link to="/service">Services</Link>
             </h2>
           </div>
           <div className="xb-footer-nav-item">
-            <span className="sub-title">Who we are?</span>
+            <span className="sub-title">Who we serve</span>
             <h2 className="title">
-              <Link to="/about">About us</Link>
+              <Link to="/">Industries</Link>
             </h2>
           </div>
           <div className="xb-footer-nav-item">
-            <span className="sub-title">How we deliver</span>
+            <span className="sub-title">Proof of work</span>
             <h2 className="title">
-              <Link to="/contact">Contact us</Link>
+              <Link to="/project">Case Studies</Link>
             </h2>
           </div>
           <div className="xb-footer-nav-item">
-            <span className="sub-title">What we're good at?</span>
+            <span className="sub-title">Our story</span>
             <h2 className="title">
-              <Link to="/project">Our project</Link>
+              <Link to="/about">About Us</Link>
             </h2>
           </div>
           <div className="xb-footer-nav-item">
-            <span className="sub-title">News?</span>
+            <span className="sub-title">Get in touch</span>
             <h2 className="title">
-              <Link to="/blog">News</Link>
+              <Link to="/contact">Contact</Link>
             </h2>
           </div>
         </div>
@@ -186,7 +186,7 @@ const Footer: React.FC = () => {
         <div className="xb-footer-bottom">
           <div className="contact-item">
             <img src={locationIcon} alt="location" />
-            <span className="contact-method">4517 Washington, USA</span>
+            <span className="contact-method">Gulshan 1, Dhaka, Bangladesh</span>
           </div>
 
           <div className="contact-item copyright-item">
@@ -196,11 +196,11 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="contact-item">
-            <a href="tel:+112304528597">
+            <a href="tel:+8801712345678">
               <img src={callIcon} alt="call" />
             </a>
-            <a className="contact-method" href="tel:+112304528597">
-              +(1)1230 452 8597
+            <a className="contact-method" href="tel:+8801712345678">
+              +880 1712-345678
             </a>
           </div>
         </div>

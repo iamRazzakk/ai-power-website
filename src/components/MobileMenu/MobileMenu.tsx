@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import Collapse from "@mui/material/Collapse";
 import "./style.css";
 
+import { SERVICES, getServiceDetailsLink } from "../../data/servicesData";
+
 interface MenuItem {
   id: number;
   title: string;
@@ -44,12 +46,11 @@ const menus: MenuItem[] = [
     id: 4,
     title: "Services",
     link: "#",
-    submenu: [
-      { id: 41, title: "AI SaaS Product", link: "/service-details" },
-      { id: 42, title: "Data & Intelligence", link: "/service-details" },
-      { id: 43, title: "AI for E-commerce", link: "/service-details" },
-      { id: 44, title: "AI Consulting", link: "/service-details" },
-    ],
+    submenu: SERVICES.map((service, index) => ({
+      id: 41 + index,
+      title: service.menuTitle,
+      link: getServiceDetailsLink(service.slug),
+    })),
   },
   {
     id: 5,

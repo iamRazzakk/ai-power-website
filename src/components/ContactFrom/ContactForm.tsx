@@ -134,9 +134,13 @@ const ContactForm: React.FC = () => {
               className="nice-select"
             >
               <option value="">Select Service*</option>
-              <option value="AI - marketing">AI - marketing</option>
-              <option value="AI consulting">AI consulting</option>
-              <option value="AI chatbot virtual">AI chatbot virtual</option>
+              <option value="UI/UX Design">UI/UX Design</option>
+              <option value="Web Development">Web Development</option>
+              <option value="Mobile App Development">Mobile App Development</option>
+              <option value="SaaS Product Development">SaaS Product Development</option>
+              <option value="ERP Solutions">ERP Solutions</option>
+              <option value="E-Commerce Development">E-Commerce Development</option>
+              <option value="Custom Software Development">Custom Software Development</option>
             </select>
             <img src={listIcon} alt="list" />
           </div>

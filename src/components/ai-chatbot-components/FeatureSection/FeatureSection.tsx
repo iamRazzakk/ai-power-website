@@ -14,7 +14,7 @@ import circleImg from "../../../images/feature/circle.png";
 import featureImg04 from "../../../images/feature/feature-img05.png";
 import featureImg05 from "../../../images/feature/feature-img06.png";
 import securityImg from "../../../images/feature/security.png";
-import BrandSection from "./BrandSection";
+// import BrandSection from "./BrandSection";
 
 const FeatureSection: React.FC = () => {
   return (
@@ -258,7 +258,7 @@ const FeatureSection: React.FC = () => {
       </section>
 
       {/* === Brand Section === */}
-      <BrandSection/>
+      {/* <BrandSection/> */}
     </div>
   );
 };

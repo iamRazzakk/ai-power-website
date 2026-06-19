@@ -19,7 +19,7 @@ const IndustriesMarqueeSection: React.FC = () => {
       <div className="container">
         <div className="sec-title sec-title-center text-center mb-40">
           <span className="sub-title mb-15">Professional & Trust-Building</span>
-          <h2 className="title">Real-time AI for smarter business</h2>
+          <h2 className="title">Scalable software for modern enterprises</h2>
         </div>
 
         <div className="row justify-content-center">

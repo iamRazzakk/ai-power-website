@@ -13,7 +13,7 @@ const BrandSection: React.FC = () => {
                 <div className="xb-brand-wrap xb-border">
                     <div className="brand-sub-title xb-border">
                         <p>
-                            World's Best <span>120 Companies</span> Work With Us
+                            {/* World's Best <span>120 Companies</span> Work With Us */}
                         </p>
                     </div>
 
@@ -38,6 +38,6 @@ const BrandSection: React.FC = () => {
     );
 };
 
-export default BrandSection;
+// export default BrandSection;
 
 

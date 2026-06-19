@@ -1,0 +1,131 @@
+/* Agency layout fixes — does not modify animation keyframes or WOW behavior */
+
+.hero-content .hero-btn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+.hero-feature-row {
+  align-items: stretch;
+}
+
+.hero-feature-row > [class*="col-"] {
+  display: flex;
+}
+
+.hero-feature-row .xb-feature-item {
+  width: 100%;
+  display: flex;
+}
+
+.hero-feature-row .xb-feature-item .xb-item--inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-feature-row .xb-feature-item .xb-item--holder {
+  flex: 1;
+}
+
+.hero-feature-row .xb-feature-item .xb-item--title {
+  min-height: 2.6em;
+}
+
+.feature .row.align-items-center {
+  align-items: stretch !important;
+}
+
+.feature .xb-feature-left-item,
+.feature .xb-feature-right-item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+@media (min-width: 992px) {
+  .feature .xb-feature-left-item,
+  .feature .xb-feature-right-item {
+    gap: 82px;
+  }
+}
+
+.feature .xb-feature-item2:not(:last-child) {
+  margin-bottom: 0;
+}
+
+.xb-feature-item2 .xb-item--inner {
+  align-items: flex-start;
+}
+
+.xb-feature-item2-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.xb-feature-item2 .xb-item--title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
+.xb-feature-item2 .xb-item--desc {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 400;
+}
+
+.xb-feature-left-item .xb-feature-item2-content {
+  text-align: right;
+}
+
+.xb-feature-right-item .xb-feature-item2-content {
+  text-align: left;
+}
+
+.feature .col-lg-4.mt-30:has(.xb-feature-img) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.xb-about-img-item img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .xb-about-img-item img {
+    height: 320px;
+  }
+}
+
+@media (max-width: 767px) {
+  .xb-about-img-item img {
+    height: 260px;
+  }
+}
+
+.xb-about-img-item {
+  margin-right: 24px;
+}
+
+.xb-project-content .xb-item--title {
+  text-transform: none;
+}
+
+.xb-project-content .xb-item--technologie ul li img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+}

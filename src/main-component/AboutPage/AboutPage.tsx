@@ -1,15 +1,19 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 import Header from "../../components/Header/Header";
 import PageTitle from "../../components/pagetitle/PageTitle";
 import AboutSection from "../../components/AboutComponents/AboutSection/AboutSection";
 import BrandSection from "../../components/AboutComponents/BrandSection/BrandSection";
 import FeatureSection from "../../components/AboutComponents/FeatureSection/FeatureSection";
-import TeamSection from "../../components/AboutComponents/TeamSection/TeamSection";
+// import TeamSection from "../../components/AboutComponents/TeamSection/TeamSection";
 import AwardSection from "../../components/AboutComponents/AwardSection/AwardSection";
 import Scrollbar from "../../components/scrollbar/scrollbar";
 import Footer from "../../components/footer/Footer";
 
 const AboutPage: React.FC = () => {
+  useEffect(() => {
+    document.title = "About Us | Aivora Digital Software Agency";
+  }, []);
+
   return (
     <Fragment>
       <div className='about-page inner-page'>
@@ -20,7 +24,7 @@ const AboutPage: React.FC = () => {
             <AboutSection />
             <BrandSection />
             <FeatureSection />
-            <TeamSection />
+            {/* <TeamSection /> */}
             <AwardSection />
           </main>
           <Footer />

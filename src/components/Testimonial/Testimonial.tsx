@@ -16,22 +16,22 @@ import avatar5 from "../../images/avatar/img05.jpg";
 const testimonials = [
   {
     id: 1,
-    source: "GoodFirms",
+    source: "Clutch",
     rating: "5.0",
     content:
-      '“We saw a big boost in engagement and sales with their recommendation engine. It personalizes the shopping experience perfectly.”',
-    name: "Riya Mehta",
-    designation: "Manager - Trendico",
+      "“They delivered a production-ready SaaS platform on schedule. Communication was clear throughout, and the architecture scales cleanly as we onboard enterprise clients.”",
+    name: "Sarah Chen",
+    designation: "VP Product — Meridian Labs",
     avatar: avatar1,
   },
   {
     id: 2,
-    source: "Clutch",
+    source: "GoodFirms",
     rating: "4.9",
     content:
-      '“Their NLP tool saves us hours by extracting key info from large documents instantly. It’s fast, accurate, and a huge time-saver.”',
-    name: "Miguel Torres",
-    designation: "CEO & Funder - DocFlow",
+      "“Our mobile app launch exceeded expectations. The team balanced UX polish with performance, and their post-launch support has been exceptional.”",
+    name: "James Okonkwo",
+    designation: "CEO — FieldPro",
     avatar: avatar2,
   },
   {
@@ -39,9 +39,9 @@ const testimonials = [
     source: "Clutch",
     rating: "5.0",
     content:
-      '“Their automation solutions saved us countless hours. Tasks that took days are now completed in minutes. The ROI was almost immediate.”',
-    name: "Sebastian Clark",
-    designation: "Manager - SwiftLogix",
+      "“The ERP system they built transformed how we manage operations. Reliable, well-documented, and built to handle our growth without disruption.”",
+    name: "Elena Vasquez",
+    designation: "COO — Meridian Supply Co.",
     avatar: avatar3,
   },
   {
@@ -49,19 +49,19 @@ const testimonials = [
     source: "GoodFirms",
     rating: "5.0",
     content:
-      '“The AI chatbot they developed has transformed our customer service. We now handle 70% of queries with higher customer satisfaction!”',
+      "“From wireframes to final product, their design work elevated our brand and improved user adoption. Professional, responsive, and detail-oriented.”",
     name: "Priya Ramirez",
-    designation: "CEO - BrightNest",
+    designation: "Head of Product — Atlas Digital",
     avatar: avatar4,
   },
   {
     id: 5,
     source: "Clutch",
-    rating: "4.7",
+    rating: "4.8",
     content:
-      '“We gained deep insights into customer behavior and performance. Their analytics made our decision-making sharper and more confident.”',
-    name: "Sebastian Clark",
-    designation: "Director - Finexa Capital",
+      "“They integrated intelligent features into our platform without overcomplicating the product. The result improved efficiency and delivered real business impact.”",
+    name: "Miguel Torres",
+    designation: "Director — Finexa Capital",
     avatar: avatar5,
   },
   {
@@ -69,9 +69,9 @@ const testimonials = [
     source: "Clutch",
     rating: "5.0",
     content:
-      '“Their automation solutions saved us countless hours. Tasks that took days are now completed in minutes. The ROI was almost immediate.”',
+      "“Transparent timelines, strong engineering quality, and a team that genuinely cares about outcomes. We consider them a long-term technology partner.”",
     name: "Sebastian Clark",
-    designation: "Manager - SwiftLogix",
+    designation: "CTO — SwiftLogix",
     avatar: avatar3,
   },
 ];
@@ -86,10 +86,10 @@ const TestimonialSection: React.FC = () => {
     <section className="testimonial pb-150 bg_img">
       <div className="container">
         <div className="sec-title sec-title-center tes-sec-title text-center mb-50">
-          <span className="sub-title mb-15">Our Testimonial</span>
+          <span className="sub-title mb-15">Client Testimonials</span>
           <h2 className="title">
-            Hear from our
-            <img src={gifShape} alt="shape" /> happy customers
+            Trusted by teams who value
+            <img src={gifShape} alt="shape" /> quality and reliability
           </h2>
         </div>
       </div>

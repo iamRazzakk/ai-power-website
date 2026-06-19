@@ -7,12 +7,14 @@ import gif1 from "../../images/icon/original-66948a0d81d.gif";
 import gif2 from "../../images/icon/0deec720000b2066289b.gif";
 import gif3 from "../../images/icon/b10c3e43e836d32554bf.gif";
 
-// About images (3–4 images)
-import img01 from "../../images/about/img01.jpg";
-import img02 from "../../images/about/img02.jpg";
-import img03 from "../../images/about/img03.jpg";
 import { Link } from "react-router-dom";
 
+const aboutImageSources = [
+  "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=80",
+  "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=900&q=80",
+  "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80",
+  "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=900&q=80",
+];
 
 const AboutSection: React.FC = () => {
   useEffect(() => {
@@ -20,23 +22,23 @@ const AboutSection: React.FC = () => {
     if (bgEl) bgEl.style.backgroundImage = `url(${aboutBg})`;
   }, []);
 
-  const aboutImages = [img01, img02, img03];
+  const aboutImages = [...aboutImageSources, ...aboutImageSources];
 
   return (
     <section className="about pt-140">
       <div className="container">
         <div className="sec-title about-sec-title mb-75">
-          <span className="sub-title">Who We are?</span>
+          <span className="sub-title">Who We Are</span>
           <h2 className="title">
-            We helping
+            We partner with ambitious teams to
             <span>
               <img src={gif1} alt="animation" />
             </span>{" "}
-            grow businesses and
+            design, build, and scale
             <span>
               <img src={gif2} alt="animation" />
             </span>
-            scale with smart, data-driven AI agency{" "}
+            digital products — from SaaS platforms to enterprise systems{" "}
             <span>
               <img src={gif3} alt="animation" />
             </span>
@@ -51,7 +53,7 @@ const AboutSection: React.FC = () => {
             <div key={idx} className="xb-about-img-item img-hove-effect">
               <div className="xb-img">
                 <Link to="/service-details">
-                  <img src={img} alt={`about-${idx + 1}`} />
+                  <img src={img} alt={`Team collaboration ${idx + 1}`} loading="lazy" />
                 </Link>
               </div>
             </div>

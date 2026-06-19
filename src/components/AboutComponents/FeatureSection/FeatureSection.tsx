@@ -52,9 +52,9 @@ const FeatureSection: React.FC = () => {
           <div className="col-lg-8">
             <div className="xb-feature-content">
               <div className="sec-title sec-title-center fea-sec-title mb-35">
-                <span className="sub-title mb-20">Why We are Better?</span>
+                <span className="sub-title mb-20">Why Choose Us</span>
                 <h2 className="title title-line_height">
-                  Why our services are better than others?
+                  Built for scale, designed for people
                 </h2>
               </div>
 
@@ -68,7 +68,7 @@ const FeatureSection: React.FC = () => {
                         <img src={icon01} alt="icon" />
                       </span>
                       <h2 className="xb-item--title">
-                        Secure, ethical & <br /> scalable AI
+                        Experienced full-stack <br /> engineering team
                       </h2>
                     </div>
                   </div>
@@ -82,7 +82,7 @@ const FeatureSection: React.FC = () => {
                         <img src={icon04} alt="icon" />
                       </span>
                       <h2 className="xb-item--title">
-                        Expert team of AI <br /> specialists
+                        Scalable cloud-native <br /> architecture
                       </h2>
                     </div>
                   </div>
@@ -96,7 +96,7 @@ const FeatureSection: React.FC = () => {
                         <img src={icon02} alt="icon" />
                       </span>
                       <h2 className="xb-item--title">
-                        Custom-built <br /> solutions that fit you
+                        Custom ERP, SaaS & <br /> e-commerce solutions
                       </h2>
                     </div>
                   </div>
@@ -110,7 +110,7 @@ const FeatureSection: React.FC = () => {
                         <img src={icon06} alt="icon" />
                       </span>
                       <h2 className="xb-item--title">
-                        Client-centered, <br /> business-focused
+                        Agile delivery with <br /> long-term support
                       </h2>
                     </div>
                   </div>

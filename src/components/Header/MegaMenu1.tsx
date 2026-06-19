@@ -31,7 +31,7 @@ const MegaMenu1: React.FC = () => {
                             <small className="iconbox_title">Services</small>
                           </span>
                           <span className="description mb-0">
-                            Happy to help you!
+                            End-to-end digital product engineering.
                           </span>
                         </Link>
                       </div>
@@ -39,18 +39,18 @@ const MegaMenu1: React.FC = () => {
                       <div className="col-xl-4 col-lg-4">
                         <Link
                           className="iconbox_block_2"
-                          to="/service-details"
+                          to="/service-details?service=web-development"
                         >
                           <span className="icon_title_wrap">
                             <small className="iconbox_icon">
                               <img src={icon1} alt="Service Details Icon" />
                             </small>
                             <small className="iconbox_title">
-                              Service details
+                              All services
                             </small>
                           </span>
                           <span className="description mb-0">
-                            Happy to help you!
+                            UI/UX, web, mobile, SaaS, ERP & more.
                           </span>
                         </Link>
                       </div>

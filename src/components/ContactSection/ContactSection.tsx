@@ -58,7 +58,7 @@ const ContactSection: React.FC = () => {
                 <span className="sub-title mb-15">Our Achievements</span>
                 <h2 className="title horizontal-shape">
                   We are trusted{" "}
-                  <img src={gifShape} alt="animated-shape" /> AI agency
+                  <img src={gifShape} alt="animated-shape" /> digital partners
                 </h2>
               </div>
 
@@ -100,9 +100,10 @@ const ContactSection: React.FC = () => {
           <div className="col-lg-6 mt-50">
             <div className="xb-contact-form xb-border">
               <div className="form-heading text-center mb-30">
-                <h3 className="title">Ready to collaborate with us?</h3>
+                <h3 className="title">Ready to start your project?</h3>
                 <p className="sub-title">
-                  Who knows where a single message might lead you.
+                  Book a free consultation and let&apos;s discuss how we can help
+                  you build scalable digital products.
                 </p>
               </div>
               <ContactForm/>
