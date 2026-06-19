@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 
 // ---- image imports ----
 import img07 from "../../images/project/img07.jpg";
@@ -27,7 +27,7 @@ const CheckIcon: React.FC = () => (
 const ProjectDetailsSection: React.FC = () => {
     const projectMeta = [
         { icon: icon4, label: "services :", value: "Ai solutions" },
-        { icon: icon5, label: "client :", value: "Aivora" },
+        { icon: icon5, label: "client :", value: "Zentigo Solution" },
         { icon: icon6, label: "location :", value: "New York,NY,USA" },
         { icon: icon7, label: "completed date :", value: "20-12-2025" },
     ];

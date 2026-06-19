@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import { Link } from "react-router-dom";
 import iconBell from "../../images/icon/bell-icon.svg";
 
@@ -20,7 +20,7 @@ const NewsletterBox: React.FC = () => {
       </div>
 
       <div className="xb-item--item-input_field pos-rel">
-        <input type="email" placeholder="aivora@example.com" />
+        <input type="email" placeholder="zentigosolution@gmail.com" />
         <button type="submit">Subscribe</button>
       </div>
     </div>

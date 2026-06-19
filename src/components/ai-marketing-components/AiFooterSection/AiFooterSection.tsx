@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import { Link } from "react-router-dom";
 
 // ✅ Import image
@@ -129,7 +129,7 @@ const AiFooterSection: React.FC = () => {
           <div className="xb-copyright ai-copyright ul_li_between">
             <p>
               Copyright © 2025{" "}
-              <Link to="/">Aivora</Link>, All rights reserved.
+              <Link to="/">Zentigo Solution</Link>, All rights reserved.
             </p>
             <ul className="ai-footer-links ul_li">
               <li>

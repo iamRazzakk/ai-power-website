@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+﻿import React, { useState } from "react";
 import faqBg from "../../../images/bg/faq-bg.png";
 import subLeftIcon from "../../../images/icon/sub-left-icon.png";
 import subRightIcon from "../../../images/icon/sub-right-icon.png";
@@ -20,7 +20,7 @@ const faqs: FAQItem[] = [
     id: 2,
     question: "How long does it take to train the chatbot?",
     answer:
-      "The setup is instant — once you provide your URL, Aivora begins training automatically. Within minutes, your chatbot is ready to answer real customer queries and continuously improve as it learns.",
+      "The setup is instant — once you provide your URL, Zentigo Solution begins training automatically. Within minutes, your chatbot is ready to answer real customer queries and continuously improve as it learns.",
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const faqs: FAQItem[] = [
     id: 4,
     question: "Does it support languages other than English?",
     answer:
-      "Yes! Aivora supports 90+ languages, allowing your chatbot to communicate with customers globally in their preferred language.",
+      "Yes! Zentigo Solution supports 90+ languages, allowing your chatbot to communicate with customers globally in their preferred language.",
   },
   {
     id: 5,

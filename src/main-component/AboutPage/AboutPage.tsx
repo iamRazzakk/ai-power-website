@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react";
+﻿import React, { Fragment, useEffect } from "react";
 import Header from "../../components/Header/Header";
 import PageTitle from "../../components/pagetitle/PageTitle";
 import AboutSection from "../../components/AboutComponents/AboutSection/AboutSection";
@@ -11,7 +11,7 @@ import Footer from "../../components/footer/Footer";
 
 const AboutPage: React.FC = () => {
   useEffect(() => {
-    document.title = "About Us | Aivora Digital Software Agency";
+    document.title = "About Us | Zentigo Solution Digital Software Agency";
   }, []);
 
   return (

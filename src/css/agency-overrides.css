@@ -1,5 +1,28 @@
 /* Agency layout fixes — does not modify animation keyframes or WOW behavior */
 
+.header-style--one .xb-header-logo {
+  flex-shrink: 0;
+  max-width: 180px;
+}
+
+.header-style--one .xb-header-logo img {
+  display: block;
+  height: 42px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 767px) {
+  .header-style--one .xb-header-logo {
+    max-width: 140px;
+  }
+
+  .header-style--one .xb-header-logo img {
+    height: 36px;
+  }
+}
+
 .hero-content .hero-btn {
   display: flex;
   flex-wrap: wrap;
@@ -128,4 +151,105 @@
   width: 38px;
   height: 38px;
   object-fit: contain;
+}
+
+/* Contact page — responsive card & form layout */
+.contact-page .contact-info-card {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.contact-page .contact-info-card .xb-img {
+  overflow: hidden;
+  border-radius: 10px;
+  aspect-ratio: 16 / 10;
+}
+
+.contact-page .contact-info-card .xb-img a {
+  display: block;
+  height: 100%;
+}
+
+.contact-page .contact-info-card .xb-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-page .contact-info-card .xb-item--holder {
+  min-width: 0;
+}
+
+.contact-page .contact-info-card .xb-item--contact_info {
+  display: block;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-page .contact-info-card a.xb-item--contact_info:hover {
+  color: var(--color-primary);
+}
+
+.contact-page .xb-contact-wrap {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.contact-page .xb-main-contact {
+  min-width: 0;
+}
+
+.contact-page .google-map {
+  min-height: 360px;
+}
+
+@media (max-width: 991px) {
+  .contact-page .contact.pb-150 {
+    padding-bottom: 80px;
+  }
+
+  .contact-page .contact-info-card {
+    padding: 16px;
+  }
+
+  .contact-page .contact-info-card .xb-item--contact_info {
+    font-size: 18px;
+  }
+
+  .contact-page .xb-contact-wrap {
+    padding: 12px;
+  }
+
+  .contact-page .google-map {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-page .contact-info-card .xb-item--contact_info {
+    font-size: 16px;
+  }
+
+  .contact-page .contact-info-card .form-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact-page .xb-main-contact {
+    padding: 32px 16px;
+  }
+
+  .contact-page .google-map {
+    min-height: 260px;
+  }
+
+  .contact-page .main-contact-input-form .form-btn {
+    width: 100%;
+    justify-content: center;
+  }
 }

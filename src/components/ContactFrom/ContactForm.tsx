@@ -10,7 +10,13 @@ import listIcon from "../../images/icon/list-icon.svg";
 import messageIcon from "../../images/icon/messages-icon.svg";
 import arrowIcon from "../../images/icon/rotate-arrow-black02.svg";
 
-const ContactForm: React.FC = () => {
+interface ContactFormProps {
+  formClassName?: string;
+}
+
+const ContactForm: React.FC<ContactFormProps> = ({
+  formClassName = "xb-contact-input-form",
+}) => {
   const [forms, setForms] = useState({
     name: "",
     email: "",
@@ -61,10 +67,10 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <form onSubmit={submitHandler} className="xb-contact-input-form">
+    <form onSubmit={submitHandler} className={formClassName}>
       <div className="row mt-none-20">
         {/* Name */}
-        <div className="col-lg-6 col-md-6 mt-20">
+        <div className="col-12 col-md-6 mt-20">
           <div className="xb-input-field">
             <input
               id="author-name"
@@ -81,7 +87,7 @@ const ContactForm: React.FC = () => {
         </div>
 
         {/* Email */}
-        <div className="col-lg-6 col-md-6 mt-20">
+        <div className="col-12 col-md-6 mt-20">
           <div className="xb-input-field">
             <input
               id="author-email"
@@ -98,7 +104,7 @@ const ContactForm: React.FC = () => {
         </div>
 
         {/* Phone */}
-        <div className="col-lg-6 col-md-6 mt-20">
+        <div className="col-12 col-md-6 mt-20">
           <div className="xb-input-field">
             <input
               id="author-phone"
@@ -115,7 +121,7 @@ const ContactForm: React.FC = () => {
         </div>
 
         {/* File Upload */}
-        <div className="col-lg-6 col-md-6 mt-20">
+        <div className="col-12 col-md-6 mt-20">
           <div className="xb-input-field xb-select-file">
             <input type="file" onChange={fileHandler} />
             <img src={uploadIcon} alt="upload" />

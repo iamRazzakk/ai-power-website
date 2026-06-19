@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../images/logo/logo.svg";
+import logo from "../../images/logo/logoPng-light.png";
 import MegaMenu1 from "./MegaMenu1";
 import MegaMenuServices from "./MegaMenu2";
 import MobileMenu from "../MobileMenu/MobileMenu";
@@ -48,16 +48,15 @@ const Header: React.FC = () => {
       className="header-area header-style--one header-transparent is-sticky"
     >
       <div
-        className={`xb-header xb-sticky-stt ${
-          isSticky ? "xb-header-area-sticky" : ""
-        } ${isVisible ? "xb-header-fixed" : "xb-header-hidden"}`}
+        className={`xb-header xb-sticky-stt ${isSticky ? "xb-header-area-sticky" : ""
+          } ${isVisible ? "xb-header-fixed" : "xb-header-hidden"}`}
       >
         <div className="container mxw-1650">
           <div className="header__wrap ul_li_between">
             {/* Logo */}
             <div className="xb-header-logo">
               <Link to="/" className="logo1" onClick={handleClick}>
-                <img src={logo} alt="Logo" />
+                <img src={logo} alt="Zentigo Solution Logo" />
               </Link>
             </div>
 
@@ -70,12 +69,12 @@ const Header: React.FC = () => {
                       <span>Home</span>
                     </Link>
                     {/* <ul className="submenu"> */}
-                      {/* <li>
+                    {/* <li>
                         <Link to="/" onClick={handleClick}>
                           <span>Ai Agency</span>
                         </Link>
                       </li> */}
-                      {/* <li>
+                    {/* <li>
                         <Link to="/ai-marketing" onClick={handleClick}>
                           <span>Ai Marketing</span>
                         </Link>

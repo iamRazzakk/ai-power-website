@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import arrowWhite from "../../images/icon/rotate-arrow-white02.svg";
 import arrowBlack from "../../images/icon/rotate-arrow-black03.svg";
 
@@ -11,8 +11,8 @@ const MAP_URL =
 const contactData = {
   location: "Gulshan 1, Dhaka, Bangladesh",
   address: "Gulshan 1, Dhaka 1212, Bangladesh",
-  phone: "+880 1712-345678",
-  email: "hello@aivora.com",
+  phone: "+8801878265664",
+  email: "zentigosolution@gmail.com",
   img: locationImage,
 };
 
@@ -21,27 +21,38 @@ const ContactInfoSection: React.FC = () => {
     <section className="contact pb-150">
       <div className="container">
         <div className="row mt-none-30 justify-content-center">
-          <div className="col-lg-5 col-md-8 mt-30">
-            <div className="xb-contact-items img-hove-effect xb-border">
+          <div className="col-lg-6 col-md-10 col-12 mt-30">
+            <div className="xb-contact-items contact-info-card xb-border">
               <div className="xb-item--inner">
                 <div className="xb-img">
-                  {[...Array(4)].map((_, i) => (
-                    <a
-                      key={i}
-                      href={MAP_URL}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img src={contactData.img} alt="Aivora office Gulshan 1" />
-                    </a>
-                  ))}
+                  <a
+                    href={MAP_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={contactData.img}
+                      alt="Zentigo Solution office Gulshan 1"
+                      loading="lazy"
+                    />
+                  </a>
                 </div>
 
                 <div className="xb-item--holder">
                   <p className="xb-item--location">{contactData.location}</p>
                   <span className="xb-item--contact_info">{contactData.address}</span>
-                  <span className="xb-item--contact_info">{contactData.phone}</span>
-                  <span className="xb-item--contact_info">{contactData.email}</span>
+                  <a
+                    className="xb-item--contact_info"
+                    href={`tel:${contactData.phone.replace(/\s/g, "")}`}
+                  >
+                    {contactData.phone}
+                  </a>
+                  <a
+                    className="xb-item--contact_info"
+                    href={`mailto:${contactData.email}`}
+                  >
+                    {contactData.email}
+                  </a>
 
                   <a
                     href={MAP_URL}

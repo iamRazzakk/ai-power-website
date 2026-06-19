@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+﻿import React, { Fragment } from "react";
 import Header from "../../components/Header/Header";
 import PageTitle from "../../components/pagetitle/PageTitle";
 import Scrollbar from "../../components/scrollbar/scrollbar";
@@ -23,13 +23,13 @@ import bgSmall from "../../images/team/noice-bg.png";
 const teamMembers = [
   {
     name: "Sebastian Patel",
-    role: "CEO & Chairman at, Aivora",
+    role: "CEO & Chairman at, Zentigo Solution",
     img: img09,
     big: true,
   },
   {
     name: "Lennox Gabriel",
-    role: "Chief Operating Officer at, Aivora",
+    role: "Chief Operating Officer at, Zentigo Solution",
     img: img10,
     big: true,
   },

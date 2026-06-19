@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import { Link } from "react-router-dom";
 
 // ✅ Import images
@@ -32,7 +32,7 @@ const FeatureSection: React.FC = () => {
         <div className="container">
           <div className="sec-title sec-title--two custom-sec-title feature-sec-title text-center mb-45">
             <span className="sub-title">
-              <img src={subLeftIcon} alt="icon" /> Aivora AI Chatbot Features
+              <img src={subLeftIcon} alt="icon" /> Zentigo Solution AI Chatbot Features
             </span>
             <h2 className="title">
               <span>

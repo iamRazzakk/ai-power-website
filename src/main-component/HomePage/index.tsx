@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react";
+﻿import React, { Fragment, useEffect } from "react";
 import Header from "../../components/Header/Header";
 import HeroSection from "../../components/hero/Hero";
 import AboutSection from "../../components/about/about";
@@ -16,7 +16,7 @@ import Scrollbar from "../../components/scrollbar/scrollbar";
 
 const HomePage: React.FC = () => {
   useEffect(() => {
-    document.title = "Aivora | Digital Software Agency";
+    document.title = "Zentigo Solution | Digital Software Agency";
   }, []);
 
   return (

@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import comparisonBg from "../../../images/bg/comparison-bg.png";
 
 interface ComparisonItem {
@@ -10,7 +10,7 @@ interface ComparisonItem {
 const ComparisonSection: React.FC = () => {
   const comparisons: ComparisonItem[] = [
     {
-      title: "Without Aivora AI chatbot",
+      title: "Without Zentigo Solution AI chatbot",
       icon: "❌",
       points: [
         "Losing customers from slow support",
@@ -22,7 +22,7 @@ const ComparisonSection: React.FC = () => {
       ],
     },
     {
-      title: "With Aivora AI chatbot",
+      title: "With Zentigo Solution AI chatbot",
       icon: "✅",
       points: [
         "Instant 24/7 answers in 90+ languages",

@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react";
+﻿import React, { Fragment, useEffect } from "react";
 import Header from "../../components/Header/Header";
 import PageTitle from "../../components/pagetitle/PageTitle";
 import Scrollbar from "../../components/scrollbar/scrollbar";
@@ -14,12 +14,12 @@ const GULSHAN_MAP_EMBED =
 
 const ContactPage: React.FC = () => {
   useEffect(() => {
-    document.title = "Contact Us | Aivora Digital Software Agency";
+    document.title = "Contact Us | Zentigo Solution Digital Software Agency";
   }, []);
 
   return (
     <Fragment>
-      <div className='about-page inner-page'>
+      <div className="about-page inner-page contact-page">
         <div className="body_wrap o-clip">
           <Header />
           <main>
@@ -42,7 +42,7 @@ const ContactPage: React.FC = () => {
                       </p>
                     </div>
 
-                    <ContactForm/>
+                    <ContactForm formClassName="xb-contact-input-form main-contact-input-form" />
                   </div>
 
                   {/* Google Map Embed */}
@@ -50,7 +50,7 @@ const ContactPage: React.FC = () => {
                     <iframe
                       src={GULSHAN_MAP_EMBED}
                       loading="lazy"
-                      title="Aivora office — Gulshan 1, Dhaka, Bangladesh"
+                      title="Zentigo Solution office — Gulshan 1, Dhaka, Bangladesh"
                       referrerPolicy="no-referrer-when-downgrade"
                       style={{ width: "100%", height: "100%", border: 0 }}
                       allowFullScreen

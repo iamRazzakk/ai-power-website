@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import { Link } from "react-router-dom";
 
 import icon1 from "../../images/icon/m_01.svg";
@@ -484,7 +484,7 @@ const MegaMenu1: React.FC = () => {
                             Sebastian Patel
                           </h4>
                           <span className="author_designation text-white">
-                            CEO & Chairman at, <Link to="/">Aivora</Link>
+                            CEO & Chairman at, <Link to="/">Zentigo Solution</Link>
                           </span>
                         </div>
                       </div>
