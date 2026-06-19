@@ -1,4 +1,4 @@
-﻿import React, { Fragment, useEffect } from "react";
+import React, { Fragment, useEffect } from "react";
 import Header from "../../components/Header/Header";
 import HeroSection from "../../components/hero/Hero";
 import AboutSection from "../../components/about/about";

@@ -1,4 +1,4 @@
-﻿import React, { useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import SimpleReactValidator from "simple-react-validator";
 
 const ApplyForm: React.FC = () => {

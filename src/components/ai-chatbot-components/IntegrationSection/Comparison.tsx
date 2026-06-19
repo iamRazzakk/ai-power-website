@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import comparisonBg from "../../../images/bg/comparison-bg.png";
 
 interface ComparisonItem {

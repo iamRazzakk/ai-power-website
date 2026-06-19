@@ -1,4 +1,4 @@
-﻿import React, { useState } from "react";
+import React, { useState } from "react";
 import faqBg from "../../../images/bg/faq-bg.png";
 import subLeftIcon from "../../../images/icon/sub-left-icon.png";
 import subRightIcon from "../../../images/icon/sub-right-icon.png";

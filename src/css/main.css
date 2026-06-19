@@ -2689,17 +2689,17 @@ body[data-aos-easing=ease] [data-aos] {
     -webkit-transform: translateX(0);
     transform: translateX(0); }
   to {
-    -webkit-transform: translateX(-400%);
-    transform: translateX(-400%); } }
-@keyframes marquee-3 {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); } }
+@keyframes marquee-4 {
   from {
     -webkit-transform: translateX(0);
     transform: translateX(0); }
   to {
-    -webkit-transform: translateX(-400%);
-    transform: translateX(-400%); } }
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); } }
 .marquee-horizontal-bottom {
-  -webkit-animation: marquee-4 4s linear infinite;
+  -webkit-animation: marquee-4 6s linear infinite;
   animation: marquee-4 6s linear infinite; }
 
 .path {
@@ -4396,11 +4396,13 @@ Drop Down menu end
 .xb-marquee-items {
   gap: 10px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  width: max-content; }
 
 .xb-marquee-item {
   display: inline-flex;
   align-items: center;
+  flex-shrink: 0;
   background: #121420;
   padding: 2px 10px;
   white-space: nowrap;

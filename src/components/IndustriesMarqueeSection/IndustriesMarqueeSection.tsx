@@ -1,19 +1,53 @@
-import Marquee from "react-fast-marquee";
-
 // ✅ Import your assets
 import gradient1 from "../../images/industries/gradient.png";
 import gradient2 from "../../images/industries/gradient02.png";
 import indusLogo from "../../images/industries/indus-logo.png";
 import shape from "../../images/shape/indus-shape.png";
 
+type MarqueeItem = {
+  tag: string;
+  number: string;
+  text: string;
+  red?: boolean;
+};
+
+const marqueeData: MarqueeItem[] = [
+  { tag: "POST", number: "300", text: "users/d72d9c38-f0d7-32b6-8c53-508d2134354/1" },
+  { tag: "GET", number: "200", text: "users/d72d9c38-f0d7-32b6-8c53-508d2134354/1" },
+  { tag: "DELETE", number: "500", text: "users/d72d9c38-f0d7-32b6-8c53-508d2134354/1", red: true },
+];
+
+const marqueeRows = [
+  { duration: "8s" },
+  { duration: "6s" },
+  { duration: "8s" },
+  { duration: "6s" },
+  { duration: "8s" },
+  { duration: "6s" },
+];
+
+const MarqueeRow = ({ duration }: { duration: string }) => {
+  const items = [...marqueeData, ...marqueeData];
+
+  return (
+    <div
+      className="xb-marquee-items marquee-horizontal-bottom"
+      style={{ animationDuration: duration }}
+    >
+      {items.map((item, i) => (
+        <div key={i} className="xb-marquee-item">
+          <span className={`tag ${item.red ? "tag-red" : ""}`}>{item.tag}</span>
+          <span className={`number ${item.red ? "number-red" : ""}`}>
+            {item.number}
+          </span>
+          <p>{item.text}</p>
+        </div>
+      ))}
+    </div>
+  );
+};
+
 const IndustriesMarqueeSection: React.FC = () => {
-
-  const marqueeData = [
-    { tag: "POST", number: "300", text: "users/d72d9c38-f0d7-32b6-8c53-508d2134354/1" },
-    { tag: "GET", number: "200", text: "users/d72d9c38-f0d7-32b6-8c53-508d2134354/1" },
-    { tag: "DELETE", number: "500", text: "users/d72d9c38-f0d7-32b6-8c53-508d2134354/1", red: true },
-  ];
-
   return (
     <section className="industries pos-rel pt-145 pb-50 bg_img">
       <div className="container">
@@ -27,133 +61,9 @@ const IndustriesMarqueeSection: React.FC = () => {
             <div className="xb-industries-wrapper">
               <div className="xb-industries-marquee">
                 <div className="xb-indus-marquee-inner">
-                  <Marquee
-                    gradient={false}
-                    speed={10}
-                    pauseOnHover
-                    direction="left"
-                    className="xb-marquee-items marquee-horizontal-bottom"
-                  >
-                    {marqueeData.map((item, i) => (
-                      <div key={i} className="xb-marquee-item">
-                        <span className={`tag ${item.red ? "tag-red" : ""}`}>
-                          {item.tag}
-                        </span>
-                        <span
-                          className={`number ${item.red ? "number-red" : ""}`}
-                        >
-                          {item.number}
-                        </span>
-                        <p>{item.text}</p>
-                      </div>
-                    ))}
-                  </Marquee>
-                  <Marquee
-                    gradient={false}
-                    speed={15}
-                    pauseOnHover
-                    direction="left"
-                    className="xb-marquee-items marquee-horizontal-bottom"
-                  >
-                    {marqueeData.map((item, i) => (
-                      <div key={i} className="xb-marquee-item">
-                        <span className={`tag ${item.red ? "tag-red" : ""}`}>
-                          {item.tag}
-                        </span>
-                        <span
-                          className={`number ${item.red ? "number-red" : ""}`}
-                        >
-                          {item.number}
-                        </span>
-                        <p>{item.text}</p>
-                      </div>
-                    ))}
-                  </Marquee>
-                  <Marquee
-                    gradient={false}
-                    speed={10}
-                    pauseOnHover
-                    direction="left"
-                    className="xb-marquee-items marquee-horizontal-bottom"
-                  >
-                    {marqueeData.map((item, i) => (
-                      <div key={i} className="xb-marquee-item">
-                        <span className={`tag ${item.red ? "tag-red" : ""}`}>
-                          {item.tag}
-                        </span>
-                        <span
-                          className={`number ${item.red ? "number-red" : ""}`}
-                        >
-                          {item.number}
-                        </span>
-                        <p>{item.text}</p>
-                      </div>
-                    ))}
-                  </Marquee>
-                  <Marquee
-                    gradient={false}
-                    speed={15}
-                    pauseOnHover
-                    direction="left"
-                    className="xb-marquee-items marquee-horizontal-bottom"
-                  >
-                    {marqueeData.map((item, i) => (
-                      <div key={i} className="xb-marquee-item">
-                        <span className={`tag ${item.red ? "tag-red" : ""}`}>
-                          {item.tag}
-                        </span>
-                        <span
-                          className={`number ${item.red ? "number-red" : ""}`}
-                        >
-                          {item.number}
-                        </span>
-                        <p>{item.text}</p>
-                      </div>
-                    ))}
-                  </Marquee>
-                  <Marquee
-                    gradient={false}
-                    speed={10}
-                    pauseOnHover
-                    direction="left"
-                    className="xb-marquee-items marquee-horizontal-bottom"
-                  >
-                    {marqueeData.map((item, i) => (
-                      <div key={i} className="xb-marquee-item">
-                        <span className={`tag ${item.red ? "tag-red" : ""}`}>
-                          {item.tag}
-                        </span>
-                        <span
-                          className={`number ${item.red ? "number-red" : ""}`}
-                        >
-                          {item.number}
-                        </span>
-                        <p>{item.text}</p>
-                      </div>
-                    ))}
-                  </Marquee>
-                  <Marquee
-                    gradient={false}
-                    speed={15}
-                    pauseOnHover
-                    direction="left"
-                    className="xb-marquee-items marquee-horizontal-bottom"
-                  >
-                    {marqueeData.map((item, i) => (
-                      <div key={i} className="xb-marquee-item">
-                        <span className={`tag ${item.red ? "tag-red" : ""}`}>
-                          {item.tag}
-                        </span>
-                        <span
-                          className={`number ${item.red ? "number-red" : ""}`}
-                        >
-                          {item.number}
-                        </span>
-                        <p>{item.text}</p>
-                      </div>
-                    ))}
-                  </Marquee>
-
+                  {marqueeRows.map((row, i) => (
+                    <MarqueeRow key={i} duration={row.duration} />
+                  ))}
                 </div>
 
                 {/* ✅ Gradient Shapes */}

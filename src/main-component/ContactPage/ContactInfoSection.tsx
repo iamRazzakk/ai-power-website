@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import arrowWhite from "../../images/icon/rotate-arrow-white02.svg";
 import arrowBlack from "../../images/icon/rotate-arrow-black03.svg";
 

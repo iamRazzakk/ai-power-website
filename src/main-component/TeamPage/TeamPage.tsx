@@ -1,4 +1,4 @@
-﻿import React, { Fragment } from "react";
+import React, { Fragment } from "react";
 import Header from "../../components/Header/Header";
 import PageTitle from "../../components/pagetitle/PageTitle";
 import Scrollbar from "../../components/scrollbar/scrollbar";

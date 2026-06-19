@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 
 // ---- image imports ----
 import img07 from "../../images/project/img07.jpg";
